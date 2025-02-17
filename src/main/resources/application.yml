@@ -19,9 +19,9 @@ spring:
 
 
   datasource:
-    url: jdbc:postgresql://db.dxbhrklufuqpwtdfvopp.supabase.co:5432/postgres
-    username: postgres
-    password: "!n@0Jv1Fj@xez%85"
+    url: jdbc:postgresql://ep-aged-tree-a85eq5fk-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+    username: neondb_owner
+    password: npg_f5QE8hYgesqK
     driver-class-name: org.postgresql.Driver
 
 #  datasource:
