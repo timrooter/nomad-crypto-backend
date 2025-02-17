@@ -2,7 +2,7 @@ package com.cryptowallet.demo.model;
 
 import com.cryptowallet.demo.service.CardUtils;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import javax.persistence.*;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
