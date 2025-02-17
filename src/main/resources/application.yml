@@ -1,0 +1,53 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: demo
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/cryptowallet
+#    username: postgres
+#    password: 1953
+#    driver-class-name: org.postgresql.Driver
+
+
+  datasource:
+    url: jdbc:postgresql://db.dxbhrklufuqpwtdfvopp.supabase.co:5432/postgres
+    username: postgres
+    password: "!n@0Jv1Fj@xez%85"
+    driver-class-name: org.postgresql.Driver
+
+#  datasource:
+#    url: jdbc:postgresql://db-postgresql-sgp1-05819-do-user-17117566-0.d.db.ondigitalocean.com:25060/defaultdb?sslmode=require
+#    username: doadmin
+#    password: AVNS_BlGa9mf1p3HH-EhTEP8
+#    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+app:
+  jwt:
+    # Signing key for HS512 algorithm
+    # In http://www.allkeysgenerator.com/ you can generate all kinds of keys
+    secret: v9y$B&E)H@MbQeThWmZq4t7w!z%C*F-JaNdRfUjXn2r5u8x/A?D(G+KbPeShVkYp
+    expiration:
+      minutes: 100
+#  cors:
+#    allowed-origins: http://localhost:3000
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    # org.hibernate.SQL: DEBUG
